@@ -1,3 +1,4 @@
+local zen = require("zen-mode")
 -- Mapping data with "desc" stored directly by vim.keymap.set().
 --
 -- Please use this mappings table to set keyboard mapping since this is the
@@ -29,6 +30,7 @@ return {
     ["<leader>hm"] = { require("harpoon.mark").add_file, desc = "Harpoon mark" },
     ["<C-l>"] = { require("harpoon.ui").nav_next, desc = "Harpoon mark" },
     ["<C-h>"] = { require("harpoon.ui").nav_prev, desc = "Harpoon mark" },
+    ["<leader>z"] = { zen.toggle, desc = "Toggle zen mode" },
   },
   t = {
     -- setting a mapping to false will disable it
